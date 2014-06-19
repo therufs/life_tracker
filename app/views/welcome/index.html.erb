@@ -1,3 +1,7 @@
 <h2>Welcome!</h2>
 
-<p>Make a <%= link_to "life event", events_path %> or <%= link_to "add a school", schools_path %>.</p>
+<p><%=link_to "Identify yourself", new_person_path %>, then create a new <%= link_to "life event", events_path %> or <%= link_to "add a school", schools_path %>.</p>
+
+<% @feed.each do |s| %>
+  <%= display(s) %><br>
+<% end %>
