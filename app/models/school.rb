@@ -4,4 +4,6 @@ class School < ActiveRecord::Base
   validates :year_end, presence: true,
                        numericality: { only_integer: true,
                                        greater_than_or_equal_to: :year_start }
+
+  belongs_to :person
 end

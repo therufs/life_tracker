@@ -36,4 +36,13 @@
     <%= f.submit %>
   </div>
 </div>
+
+<div class="row">
+  <div class="field small-4 columns">
+    <%= f.label :person %><br>
+    <%= f.collection_select :person, @people, :id, :name %>
+  </div>
+</div>
+
+
 <% end %>
