@@ -4,4 +4,5 @@ class Event < ActiveRecord::Base
   validates :description, length: { maximum: 140 }
 
   belongs_to :person
+  validates :person
 end
