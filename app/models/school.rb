@@ -6,5 +6,5 @@ class School < ActiveRecord::Base
                                        greater_than_or_equal_to: :year_start }
 
   belongs_to :person
-  validates :person
+  validates :person, presence: true
 end
